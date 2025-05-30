@@ -1,1 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Nos Produits - Le Salon des Gentlemen</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            padding: 2rem 0;
+        }
+
+        .product-card {
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 1rem;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: auto;
+            max-height: 200px;
+            object-fit: contain;
+            margin-bottom: 1rem;
+        }
+
+        .product-card h3 {
+            font-size: 18px;
+            margin-bottom: 0.5rem;
+        }
+
+        .product-card p {
+            font-size: 12px;
+            margin-bottom: 0.5rem;
+        }
+
+        .product-price {
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+
+        .btn {
+            background-color: #333;
+            color: white;
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 12px;
+        }
+
+        .btn:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Le Salon des Gentlemen</h1>
+    </header>
+    <nav>
+        <a href="index.html">Accueil</a>
+        <a href="equipe.html">Notre équipe</a>
+        <a href="prestations.html">Nos Prestations</a>
+        <a href="produits.html">Nos produits</a>
+    </nav>
+
+    <section id="produits">
+        <h2>Nos produits professionnels</h2>
+        <p>Découvrez notre sélection de produits de qualité pour l’entretien de vos cheveux et de votre barbe.</p>
+
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="https://via.placeholder.com/200x200?text=Huile+Barbe" alt="Huile à barbe">
+                <h3>Huile à Barbe Nourrissante</h3>
+                <p>Adoucit, parfume et nourrit la barbe au quotidien.</p>
+                <div class="product-price">18 €</div>
+                <button class="btn">Ajouter au panier</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://via.placeholder.com/200x200?text=Baume+Barbe" alt="Baume barbe">
+                <h3>Baume à Barbe Structurant</h3>
+                <p>Fixation légère et hydratation en profondeur.</p>
+                <div class="product-price">20 €</div>
+                <button class="btn">Ajouter au panier</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://via.placeholder.com/200x200?text=Shampooing+Cheveux" alt="Shampooing cheveux">
+                <h3>Shampooing Revitalisant</h3>
+                <p>Nettoie en douceur tout en stimulant le cuir chevelu.</p>
+                <div class="product-price">15 €</div>
+                <button class="btn">Ajouter au panier</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://via.placeholder.com/200x200?text=Cire+Coiffante" alt="Cire coiffante">
+                <h3>Cire Coiffante Mat</h3>
+                <p>Tenue forte et finition naturelle pour un look parfait.</p>
+                <div class="product-price">16 €</div>
+                <button class="btn">Ajouter au panier</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://via.placeholder.com/200x200?text=Peigne+Barbe" alt="Peigne à barbe">
+                <h3>Peigne en Bois pour Barbe</h3>
+                <p>Antistatique, pratique pour démêler en douceur.</p>
+                <div class="product-price">12 €</div>
+                <button class="btn">Ajouter au panier</button>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
 
