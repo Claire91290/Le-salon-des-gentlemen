@@ -17,10 +17,30 @@
         nav a:hover { background-color: #555; }
         section { padding: 2rem; }
         h1 { text-align: center; }
-        iframe { width: 100%; height: 450px; border: 0; }
+        #map { width: 100%; height: 450px; }
         .team-member { margin: 1rem 0; }
         .service, .product { margin-bottom: 1rem; }
     </style>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
+    <script>
+        function initMap() {
+            const location = { lat: -21.335044, lng: 55.47886 };
+            const map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 18,
+                center: location,
+            });
+            const marker = new google.maps.Marker({
+                position: location,
+                map: map,
+                title: "Le Salon des Gentlemen",
+                icon: {
+                    url: "https://raw.githubusercontent.com/Claire91290/Le-salon-des-gentlemen/main/assets/logo.jpg",
+                    scaledSize: new google.maps.Size(50, 50)
+                }
+            });
+        }
+        window.onload = initMap;
+    </script>
 </head>
 <body>
     <header>
@@ -35,12 +55,7 @@
 
     <section id="accueil">
         <p>Bienvenue au Salon des Gentlemen, artisan coiffeur barbier haut de gamme situé à Saint-Pierre de La Réunion.</p>
-        <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3778.097489962716!2d55.4771502!3d-21.3349029!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2182a10025337779%3Af19e47e91c95621e!2sLe%20Salon%20des%20Gentlemen!5e0!3m2!1sfr!2sfr!4v1700000000000!5m2!1sfr!2sfr" 
-            allowfullscreen="" 
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
+        <div id="map"></div>
     </section>
 
     <section id="equipe">
@@ -92,3 +107,4 @@
     </section>
 </body>
 </html>
+
