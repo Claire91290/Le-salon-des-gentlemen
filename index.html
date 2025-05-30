@@ -1,11 +1,19 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="fr">
 <head>
-    <link rel="stylesheet" href="style.css">
-    <header>
-    <img src="https://raw.githubusercontent.com/Claire91290/Le-salon-des-gentlemen/main/assets/logo.jpg" alt="Logo du Salon des Gentlemen"style="width: auto; height: 50%;">
-   
- 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le Salon des Gentlemen</title>
+    <style>
+        body { font-family: Garamond, serif; margin: 0; padding: 0; }
+        header { background-color: #222; color: white; padding: 1rem; text-align: center; }
+        nav { background-color: #333; display: flex; justify-content: center; }
+        nav a {
+            color: white;
+            padding: 1rem;
+            text-decoration: none;
+            transition: background 0.3s;
+        }
         nav a:hover { background-color: #555; }
         section { padding: 2rem; }
         h1 { text-align: center; }
@@ -54,21 +62,18 @@
     <header>
         <h1>Le Salon des Gentlemen</h1>
     </header>
-   <nav>
-    <a href="index.html">Accueil</a>
-    <a href="equipe.html">Notre équipe</a>
-    <a href="prestations.html">Nos Prestations</a>
-    <a href="produits.html">Nos produits</a>
-</nav>
+    <nav>
+        <a href="#accueil">Accueil</a>
+        <a href="#equipe">Notre équipe</a>
+        <a href="#prestations">Nos Prestations</a>
+        <a href="#produits">Nos produits</a>
+    </nav>
 
-<section id="accueil">
-    <p>Bienvenue au Salon des Gentlemen, artisan coiffeur barbier haut de gamme situé à Saint-Pierre de La Réunion.</p>
-    <div id="map-container">
-        <div id="map"></div>
-    </div>
-</section>
-
-</body>
-</html>
+    <section id="accueil">
+        <p>Bienvenue au Salon des Gentlemen, artisan coiffeur barbier haut de gamme situé à Saint-Pierre de La Réunion.</p>
+        <div id="map-container">
+            <div id="map"></div>
+        </div>
+    </section>
 
 
