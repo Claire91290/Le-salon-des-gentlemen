@@ -28,9 +28,16 @@
             border: 1px solid #ccc;
         }
         .team-member { margin: 1rem 0; }
+        .team-member img {
+            max-width: 300px;
+            width: 100%;
+            height: auto;
+            display: block;
+            margin-top: 0.5rem;
+        }
         .service, .product { margin-bottom: 1rem; }
     </style>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAB4n5plmNu_ncJBX3CXYLWtGqdgMocQ7UY"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
     <script>
         function initMap() {
             const location = { lat: -21.335044, lng: 55.47886 };
@@ -72,12 +79,13 @@
     <section id="equipe">
         <h2>Notre équipe</h2>
         <div class="team-member">
-            <h3>Maxime</h3>
-            <p>Coiffeur barbier passionné, Maxime vous accueille et vous conseille avec expertise et attention.</p>
+            <h3>Maxie</h3>
+            <img src="https://raw.githubusercontent.com/Claire91290/Le-salon-des-gentlemen/main/assets/Maxime.jpg" alt="Photo de Maxime">
+            <p>Coiffeuse et barbière passionnée, Maxie vous accueille avec expertise et attention.</p>
         </div>
         <div class="team-member">
             <h3>Killian</h3>
-            <p>Apprenti coiffeur barbier, Killian vous accueille et vous conseille avec professionnalisme.</p>
+            <p>Coiffeur barbier méticuleux, Killian est spécialisé dans les coupes modernes et classiques.</p>
         </div>
     </section>
 
@@ -118,4 +126,5 @@
     </section>
 </body>
 </html>
+
 
