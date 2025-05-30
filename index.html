@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le Salon des Gentlemen</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+        header { background-color: #222; color: white; padding: 1rem; text-align: center; }
+        nav { background-color: #333; display: flex; justify-content: center; }
+        nav a {
+            color: white;
+            padding: 1rem;
+            text-decoration: none;
+            transition: background 0.3s;
+        }
+        nav a:hover { background-color: #555; }
+        section { padding: 2rem; }
+        h1 { text-align: center; }
+        iframe { width: 100%; height: 450px; border: 0; }
+        .team-member { margin: 1rem 0; }
+        .service, .product { margin-bottom: 1rem; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Le Salon des Gentlemen</h1>
+    </header>
+    <nav>
+        <a href="#accueil">Accueil</a>
+        <a href="#equipe">Notre équipe</a>
+        <a href="#prestations">Nos Prestations</a>
+        <a href="#produits">Nos produits</a>
+    </nav>
+
+    <section id="accueil">
+        <h2>Accueil</h2>
+        <p>Bienvenue au Salon des Gentlemen, artisan coiffeur barbier haut de gamme situé à Saint-Pierre de La Réunion.</p>
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3778.097489962716!2d55.4771502!3d-21.3349029!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2182a10025337779%3Af19e47e91c95621e!2sLe%20Salon%20des%20Gentlemen!5e0!3m2!1sfr!2sfr!4v1700000000000!5m2!1sfr!2sfr" 
+            allowfullscreen="" 
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </section>
+
+    <section id="equipe">
+        <h2>Notre équipe</h2>
+        <div class="team-member">
+            <h3>Maxie</h3>
+            <p>Coiffeuse et barbière passionnée, Maxie vous accueille avec expertise et attention.</p>
+        </div>
+        <div class="team-member">
+            <h3>Killian</h3>
+            <p>Coiffeur barbier méticuleux, Killian est spécialisé dans les coupes modernes et classiques.</p>
+        </div>
+    </section>
+
+    <section id="prestations">
+        <h2>Nos Prestations</h2>
+        <div class="service">
+            <h3>Coupe Homme</h3>
+            <p>Coupe personnalisée selon vos envies et votre style.</p>
+        </div>
+        <div class="service">
+            <h3>Rasage à l'ancienne</h3>
+            <p>Un moment de détente avec serviette chaude et soins adaptés.</p>
+        </div>
+        <div class="service">
+            <h3>Entretien de barbe</h3>
+            <p>Taillage précis, soin et mise en forme de votre barbe.</p>
+        </div>
+        <div class="service">
+            <h3>Coloration / Patine</h3>
+            <p>Techniques modernes pour sublimer votre chevelure.</p>
+        </div>
+    </section>
+
+    <section id="produits">
+        <h2>Nos produits</h2>
+        <div class="product">
+            <h3>Produits pour barbe</h3>
+            <p>Huiles, baumes et shampoings de qualité professionnelle.</p>
+        </div>
+        <div class="product">
+            <h3>Produits capillaires</h3>
+            <p>Cires, gels et soins adaptés à tous types de cheveux.</p>
+        </div>
+        <div class="product">
+            <h3>Accessoires</h3>
+            <p>Brosses à barbe, rasoirs et peignes élégants et efficaces.</p>
+        </div>
+    </section>
+</body>
+</html>
